@@ -27,7 +27,7 @@ header {
   position: relative;
 }
 
-/* Header container: holds logo, club title, and menu button */
+/* Header container: holds logo, club title */
 .header-container {
   display: flex;
   align-items: center;
@@ -55,21 +55,11 @@ header {
   color: #e0e0e0;
 }
 
-/* Mobile toggle button styling */
-#navToggle {
-  background: #e0e0e0;  /* Light background */
-  color: #000;          /* Dark text for contrast */
-  border: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  display: none;  /* Hidden on larger screens */
-}
-
 /* Navigation menu styling */
 nav ul {
   list-style: none;
   text-align: center;
+  margin-top: 10px;  /* Adds a bit of spacing between header and nav */
 }
 nav ul li {
   display: inline-block;
@@ -96,7 +86,7 @@ section h2 {
 
 /* Random quote styling */
 #random-quote {
-  margin-top: -3px;   /* Reduced space between header and quote */
+  margin-top: 5px;   /* Reduced space between header and quote */
   font-style: italic;
   text-align: center;
   color: #FFA500;    /* Orange accent for the random quote */
@@ -150,26 +140,4 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-  #navToggle {
-    display: block;
-  }
-  
-  nav {
-    display: none;
-  }
-  
-  nav.active {
-    display: block;
-    background: #000;
-    padding: 10px 0;
-  }
-  
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
 }
