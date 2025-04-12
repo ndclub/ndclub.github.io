@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Monaco;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -52,20 +52,47 @@
   
   /* Sections styling */
   section {
-    margin: 20px 0;
-    padding: 20px;
+    margin: 15px 0;
+    padding: 15px;
     background: #ffffff;
     border: 1px solid #ddd;
   }
   
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: #35424a;
-    color: #ffffff;
-    margin-top: 20px;
+  .eboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
   }
   
+  .member {
+    flex: 1 1 200px; /* Allows the items to grow/shrink as needed */
+    max-width: 250px;
+    text-align: center;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .member img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .member h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .member p {
+    color: #555;
+    font-size: 0.9em;
+  }
+
   /* Hide nav menu on small screens */
   .hidden {
     display: none;
