@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Navigation Styles */
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Mobile nav toggle button */
+  #navToggle {
+    display: none;
+    background: #ffffff;
+    color: #35424a;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  /* Sections styling */
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  /* Hide nav menu on small screens */
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    #navToggle {
+      display: block;
+    }
+    nav ul {
+      text-align: center;
+    }
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+    /* Initially hide the menu on small screens */
+    nav {
+      display: none;
+    }
+    nav.active {
+      display: block;
+      background: #35424a;
+      padding: 10px 0;
+    }
+  }
+  

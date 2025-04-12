@@ -1,2 +1,1 @@
-# ndclub.github.io
-Neurodiversity Club Website
+This is for UTK's Neurodiversity Club! Enjoy the pleasant browsing experience!
