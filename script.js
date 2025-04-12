@@ -1,16 +1,16 @@
-// Display a random quote on each page refresh
-window.addEventListener('DOMContentLoaded', () => {
-  const quotes = [
-    "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt",
-    "Do what you can, with what you have, where you are. - Theodore Roosevelt",
-    "Simplicity is the ultimate sophistication. - Leonardo da Vinci",
-    "The secret of getting ahead is getting started. - Mark Twain",
-    "Hard work beats talent when talent doesn't work hard. - Tim Notke",
-    "The way to get started is to quit talking and begin doing. - Walt Disney",
-    "Believe you can and you're halfway there. - Theodore Roosevelt"
-  ];
+  window.addEventListener('DOMContentLoaded', () => {
+    const quotes = [
+      "Merci Beaucoup",
+      "Welcome to the cool kids club!",
+      "C'est légal parce que je le veux",
+      "You should read the Inner Game of Tennis",
+      "Never settle my friend, life is a long one, not for the faint of heart",
+      "My dog's name is Badger! I love him very much!",
+      "If you live each day as if it was your last, someday you most certainly will be right"
+    ];
+    
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+    document.getElementById('random-quote').textContent = randomQuote;
+  });
   
-  const randomIndex = Math.floor(Math.random() * quotes.length);
-  const randomQuote = quotes[randomIndex];
-  document.getElementById('random-quote').textContent = randomQuote;
-});
